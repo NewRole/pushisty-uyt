@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Приют "Лучший Дом"</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <div class="logo-container">
+            <a href="#"><img src="logo.png" alt="Логотип" class="logo"></a>
+        </div>
+        <div class="contact-info">
+            <p>Телефон: +7 914-123-45-67</p>
+            <p>г.Хабаровск, Ул.Ульяновская 160Б</p>
+        </div>
+    </div>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#about-shelter">Главная</a></li>
+            <li><a href="#pets-section">Каталог</a></li>
+            <li><a href="#pet-shop">Магазин</a></li>
+            <li><a href="#video-section">Блог</a></li>
+            <li><a href="#social-section"> О нас </a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="about-shelter"></div>
+    <section class="shelter-info">
+        <div class="top-row">
+            <img src="logo.png" alt="Логотип приюта" class="logo">
+            <div class="contact-info2">
+                <p>Телефон: +7 (999) 087-88-62, Сергей</p>
+                <p>Instagram: @pusistydom</p>
+                <p>C 01.02.2022 по 01.09.2023:</p>
+                <p>В новые семьи пристроено - 50 животных</p>
+                <p>Стерилизоровано - 80 животных</p>
+            </div>
+        </div>
+        <div class="bottom-row">
+             <div class="about-shelter">
+                <h1>Приют "ПУШИСТЫЙ УЮТ"</h1>
+                <p>Приют существует с 2017 года. Приютом руководят, студент группы ИС-31, Сергей</p>
+                <p> Чем мы занимаемся в свободное время? Ах да,его у нас нет, так как у нас много хвостиков на попечении. В жизни мне всегда нужны разные эмоции и положительный результат. и сейчас наши дни проходят именно так, ежедневные взлеты и падения, с самого утра не знаешь, чего ожидать.Но на самом деле, все это стоит того, в конце ты получаешь тот самый положительный результат.</p>
+                <p>За три года существования приюта многие питомцы обрели свои семьи, а некоторые подопечные живут в приюте уже долгое время, но не теряют надежды встретить своих людей. Животные нам доверяют, всегда ждут и радуются каждомуу мгновению, провденному с нами. Мы безгранично всех любим.</p>
+                <p>Наша цель спасать и помогать животным, попавшимм в беду на улицах города Хабаровска. Практически ежедневно в нашу жизнь приходят новые пушистые друзья, а стары отправляются в любящие семьи.  </p>
+                <button>Подробнее</button>
+            </div>
+        </div>
+    </section>
+</main>
+<div id="pets-section"></div>
+<section class="pets-section">
+    <h1>Наши питомцы</h1>
+    <div class="pet-cards-container">
+        <div class="pet-card">
+            <img src="images/puppets.jpg" alt="Щенки">
+            <p>Макс, очень дружелюбный и любит играть с детьми. Когда Макс счастлив, он радостно гавкает и виляет хвостом.</p>
+            <p>Чарли очень активный и любит гулять. Когда он счастлив, он становится очень активным и много играется. </p>
+            <p>Дина очень умная и послушная. Она идеально подойдет для тех, кто ищет врного друга.</p>
+            <button>Подробнее</button>
+        </div>
+        <div class="pet-card">
+            <img src="images/kittens.jpg">
+            <p>Марта - это котенок 5 месяцев, с красивой коричнево-белой шерстью и голубыми глазами. Она очень ласковая и любит лежать на коленях у хозяина. Когда Марта счастлива, она мурлычит и закрывает глаза.</p>
+            <p> Кити-это маленькая кошечка той же породы, что и Марта, но только другого цвета. Кити очень игривая и любопытная, любит исследовать новые места и играть с игрушками. Когда Кити счастлива,она мурлычит и ложится на спинку.</p>
+            <button>Подробнее</button>
+        </div>
+        <div class="pet-card">
+            <img src="images/dog.jpg" alt="Собака">
+            <p> Ричард - Это крупный пес с густой коричневой шерстью. Он очень добрый, послушный и верный. Он отлично подойдет как для охраны дома, так и для семейной пары в качесве друга.</p>
+            <button>Подробнее</button>
+        </div>
+    </div>
+    <button href="#" class="learn-more">Узнать больше о питомцах</button>
+</section>
+<div id="pet-shop"></div>
+<section class="pet-shop">
+    <h1>Магазин</h1>
+    <div class="pet-shop-catalog">
+        <div class="catalogs-container">
+            <button class="catalogs" type="button" onclick="toggleProducts('cats')">
+                <img src="images/cat-food.jpg"><br>
+                <span>Кошки</span>
+            </button>
+            <div id="cats" class="products-list" >
+                <ul>
+                    <li onclick="showProductDetails('cat-food')">Корм для кошек</li>
+                    <li onclick="showProductDetails('cat-toys')">Игрушки для кошек</li>
+                    <li onclick="showProductDetails('cat-litters')">Лотки и наполнители</li>
+                </ul>
+            </div>
+
+            <button class="catalogs" type="button" onclick="toggleProducts('dogs')">
+                <img src="images/dog-food.jpg"><br>
+                <span>Собаки</span>
+            </button>
+            <div id="dogs" class="products-list" >
+                <ul>
+                    <li onclick="showProductDetails('dog-food')">Корм для собак</li>
+                    <li onclick="showProductDetails('dog-leashes')">Ошейники и поводки</li>
+                    <li onclick="showProductDetails('dog-toys')">Игрушки для собак</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="video-section"></div>
+<section class="video-section">
+    <h1>Наша медиа</h1>
+    <div class="video-container">
+        <div class="video-item">
+            <h2>История котёнка Эльфа от которого дважды отказались / малыш сидел в приюте и пол года ждал хозяина</h2>
+            <video class="video-player" controls>
+                <source src="videos/video1.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео тег.
+            </video>
+            <div class="video-description">
+                <p>В этом сердце разрывающем видео мы расскажем историю котёнка по имени Эльф, чья жизнь была полна испытаний с самого начала. Этот маленький пушистый герой был найден одиноким и брошенным, после чего его приютил местный приют для животных, где он провел долгих шесть месяцев, мечтая о том дне, когда у него появится собственный дом и любящая семья. Несмотря на то что Эльф дважды обретал надежду, когда его забирали из приюта, каждый раз его возвращали обратно из-за разных обстоятельств. Видео расскажет о его путешествии через отчаяние и одиночество к надежде и любви, демонстрируя несгибаемый дух маленького котёнка, который не переставал верить в лучшее. Подготовьтесь к эмоциональному рассказу о терпении, стойкости и бесконечном поиске дома, который каждый заслуживает</p>
+            </div>
+        </div>
+        <div class="video-item">
+            <h2>Купили"Стафа"у плодильщиков/ вырос не стаф/худую собаку бросили зимой на трассе в-40С° help the dog</h2>
+            <video class="video-player" controls>
+                <source src="videos/video2.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео тег.
+            </video>
+            <div class="video-description">
+                <p>Это видео рассказывает о шокирующем и вдохновляющем путешествии одной собаки, которая столкнулась с предательством тех, кто должен был её любить и защищать. Начало её истории звучит обманчиво обыденно: семья решает купить щенка стаффордширского терьера у сомнительных разведенцев. Однако, по мере роста, становится очевидным, что собака не является чистокровным стафом. Это открытие приводит к трагическому решению: в середине зимы, при температуре -40°C, собаку безжалостно бросают на обочине трассы, оставляя её умирать. Видео документирует миссию спасения этой храброй души, борьбу за её выживание и восстановление после предательства, а также важность ответственного отношения к животным и выбора питомца. Сюжет наполнен моментами отчаяния и надежды, иллюстрируя не только жестокость человеческой бесчувственности, но и безграничную любовь и сострадание, которые могут изменить жизнь</p>
+            </div>
+        </div>
+        <div class="video-item">
+            <h2>Кот полз по снегу и просил помощи после смерти хозяина он оказался на улице /help save the cat</h2>
+            <video class="video-player" controls>
+                <source src="videos/video3.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео тег.
+            </video>
+            <div class="video-description">
+                <p>Это видео повествует о сердцераздирающей истории кота, который столкнулся с жестоким испытанием судьбы после потери своего хозяина. Оставшись без опоры и защиты, этот маленький пушистый искатель приключений оказывается на улице, где ему приходится бороться за выживание в холодном и безжалостном мире. Видео запечатлело момент, когда, истощенный и замерзший, кот ползет по снегу, из последних сил просит о помощи, тем самым трогая до глубины души всех, кто его видит. Этот клип не просто рассказывает о спасении одного кота; он поднимает важные вопросы о животных, оставшихся без дома и любви после утраты своих хозяев, и о нашей общей ответственности за тех, кто не может позаботиться о себе сам. Смотрите, как сообщество объединяется, чтобы дать этому коту второй шанс на жизнь, полную заботы и любви</p>
+            </div>
+        </div>
+    </div>
+    <!-- Посты с ВКонтакте -->
+    <div class="vk-posts">
+        <h2>Посты с ВКонтакте</h2>
+        <a href="ССЫЛКА_НА_ВАШ_ПОСТ_1" target="_blank">Пост 1</a>
+        <a href="ССЫЛКА_НА_ВАШ_ПОСТ_2" target="_blank">Пост 2</a>
+        <a href="ССЫЛКА_НА_ВАШ_ПОСТ_3" target="_blank">Пост 3</a>
+    </div>
+<div id="social-section">
+</div>
+    <div class="social-section">
+        <h2>Мы в соцсетях</h2>
+        <a href="https://www.youtube.com/your-channel" target="_blank" class="youtube">Перейти на YouTube</a>
+        <a href="https://vk.com/your-vk" target="_blank" class="vkontakte">Перейти на ВКонтакте</a>
+    </div>
+</section>
+<footer class="footer">
+  <div class="footer-top">
+    
+    <div class="footer-social">
+      <a href="https://vk.com/yourpage" target="_blank">
+        <img src="images/vk-logo.png" alt="VK">
+      </a>
+      <a href="https://t.me/yourchannel" target="_blank">
+        <img src="images/tg-logo.png"" alt="Telegram">
+      </a>
+      <a href="https://www.youtube.com/yourchannel" target="_blank">
+        <img src="images/yt-logo.png"" alt="YouTube">
+      </a>
+    </div>
+    <div class="footer-buttons">
+      <button>Пожертвовать фонду</button>
+      <button>Приютить питомца</button>
+    </div>
+  </div>
+  <div class="footer-map">
+    <script type="text/javascript" charset="utf-8"
+      async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa1e45ab93b79c74dd74908aa7dee13825bc070e207d12da90b1a9e3b73342297&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-info">
+      <p>Благотворительный фонд «ПУШИСТЫЙ УЮТ» © Все права защищены. 2017-2024</p>
+    </div>
+    <div class="footer-made-by">
+      <p>Made by student with notepad</p>
+    </div>
+  </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</body>
+</html>
